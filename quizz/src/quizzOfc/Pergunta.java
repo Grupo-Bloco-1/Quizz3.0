@@ -31,6 +31,7 @@ public class Pergunta {
 	
 	public void listarAlternativas() {
 		System.out.println("----------------------------------------------------");
+		System.out.println(this.pergunta);
 		System.out.println("A " +this.alt1);
 		System.out.println("B " +this.alt2);
 		System.out.println("C " +this.alt3);
@@ -40,6 +41,10 @@ public class Pergunta {
 	private char setAltCorreta(char altCorreta) {
 		return Character.toUpperCase(altCorreta); //converte character minusc p/ maisc.	
 	}
+	
+	public String toString() {
+		return Pergunta();
+	
 	
 	public void verificarResp(char resposta) {
 		resposta=Character.toUpperCase(resposta); //converte character minusc p/ maisc.
